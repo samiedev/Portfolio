@@ -1,0 +1,246 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css"/>
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <div id="brand"><a href="/">MyPortfolio</a></div>
+        <nav>
+            <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>s
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contacts">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="col-sm-2">
+            <div class="row">
+                <!-- Coming Soon -->
+            </div>
+        </div>
+
+        <div class="col-sm-8">
+            <div class="row">
+                <h4>Sampson Mensah</h4>
+                <p>Font End Software Engineer</p>
+                <h3>
+                    Hey there! I'm a Creative Front End Software Engineer based
+                    in Surrey, British Columbia, Canada.
+                </h3>
+            </div>
+            <div class="projects">
+                <img src="images/project Image/Project 11.PNG" alt="project">
+                <p>Project 1</p>
+                <h5>Font End Software Engineer</h5>
+
+                <img src="images/project Image/Project New 1.PNG" alt="project">
+                <p>Project 2</p>
+                <h5>Font End Software Engineer</h5>
+
+                <img src="images/project Image/Project New 2.PNG" alt="project">
+                <p>Project 3</p>
+                <h5>Font End Software Engineer</h5>
+            </div>
+
+            <div class="experience">
+                <h2>My Experience</h2>
+                <p>
+                    The exposure I had to computers during my teenage made me developed 
+                    great love and passion for computers. I started working with computers 
+                    after high school in 2013.
+                    <br><br>
+                    The primary focus of my studies in web development has been HTML, CSS, 
+                    Bootstrap, JavaScript. JQuery and some React JS. I have created multiple 
+                    websites and I have also volunteered my time to gain professional level 
+                    experience using these skills. I recently turned my focus to furthering 
+                    my JavaScript skills by working more with Vanilla JavaScript and learning 
+                    AngularJS.
+                    <br><br>
+                    Below are some of my experiences: 
+
+                </p>
+            </div>
+            <div class="container100">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <h5>Afro Superstore</h5>
+                        <p>Front End Software Engineer</p>
+                        <p id="smallText">January 2021 - December 2022</p>
+                        
+                        <li>
+                            Developed and structured feature-rich client
+                            websites, ensuring that all needs were met and
+                            company policies and procedures followed; <br> 
+                            created high-quality code.
+                        </li>
+                        <li>
+                            Collaborated with the team to design, structure, and 
+                            implement new websites from start to finish; 
+                            updated existing websites.
+                        </li>
+                        <li>
+                            Collaborated with project managers and creative teams 
+                            to deliver original, efficient solutions advised clients, 
+                            and provided expertise.
+                        </li>
+                        <li>
+                            Managed a team of 7 freelance web developers and designers; 
+                            trained and educated other web developers; measured the 
+                            performance of the team.
+                        </li>
+                        <li>
+                            Participated in weekly meetings with executives, and 
+                            supported brainstorming and idea generation.
+                        </li>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <h5>Josam IT Services</h5>
+                        <p>Front End Software Engineer</p>
+                        <p id="smallText">January 2018 - December 2020</p>
+                        <li>
+                            Developed and structured feature-rich client
+                            websites, ensuring that all needs were met and
+                            company policies and procedures followed; <br>
+                            created with WordPress, Wix, and Webflow.
+                        </li>
+                        <li>
+                            Collaborated wiht the team to design, structure, and 
+                            implement new websites from start to finish; updated 
+                            existing websites.
+                        </li>
+                        <li>
+                            Directing or performing website updates.
+                        </li>
+                        <li>
+                            Developing or validating test routines and schedules 
+                            to ensure that test cases mimic external interfaces and
+                            address all browser and address types.
+                        </li>
+                        <li>
+                            Editing or designing website content, and directing team 
+                            members who produce content.
+                        </li>
+                        <li>
+                            Identifying problems uncovered by customer feedback and testing,
+                            and correcting or referring problems to appropriate personnel for 
+                            correction. 
+                        </li>
+                        <li>
+                            Collaborated with project managers and creative teams to deliver
+                            original, efficient solutions advised clients, and provided expertise.
+                        </li>
+                        <li>
+                            Participated in weekly meetings with executives, and supported 
+                            brainstorming and idea generation.
+                        </li>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="banner-card">
+                <img src="images/pic13 (4).jpg" class="img-flud" alt="bgImg" width="100%" height="1200">
+                <div class="banner-text">
+                    <div class="text">
+                        <!-- <h2>CONTACT</h2> -->
+                        <p>
+                            Want to get in touch? <br>
+                            Drop me a line!
+                        </p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <form action="connect.php" method="post">
+                                <div class="form-group">
+                                    <label for="inputName">Name</label><br>
+                                    <input type="text" class="form-control" placeholder="Enter your Name" id="inputName" aria-describedby="nameHelp" name="fullName">
+                                </div><br>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label> <br>
+                                    <input type="email" class="form-control" placeholder="Enter your Email" id="exampleInputEmail1" aria-describedby="emailHelp" name="email"><br>
+                                    <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="formControlTextarea">Message</label><br>
+                                    <textarea class="form-control" name="" id="formControlTextarea1" cols="100%" rows="10" name="message"></textarea>
+                                </div>
+                                <!-- <div class="form-group form-check">
+                                    <input type="radio" class="form-check-input" id="check1">
+                                    <label class="form-check-label" for="Check1">Check me out</label>
+                                </div> -->
+                                <br>
+                                <!-- <input type="submit" class="btn btn-primary w-100" value="Login" name=""> -->
+                                <button type="submit" class="btn">Submit</button>
+                            </form>
+                        </div>            
+                    </div>                   
+                </div>
+            </div>
+            
+            <!-- MY MAIN CONTENTS -->
+        </div>
+
+        <div class="col-sm-2">
+            <div class="row">
+                <!-- Coming Soon  -->
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="text">
+                <h5>SAMPSON MENSAH</h5>
+                <br>
+                <p>
+                    A Frontend focused Web Developer building the Frontend of Websites and
+                    Web Applications that leads to the success of the overall product.
+                </p>            
+            </div>
+            <div class="wrapper">
+                <h5>SOCIAL</h5>
+                <div class="ftLogo">
+                    <img src="images/Logo/facebook.svg" class="socLogo" alt="socialMed" width="40">
+                    <img src="images/Logo/instagram.svg" class="socLogo" alt="socialMed" width="40">
+                    <img src="images/Logo/facebook.svg" class="socLogo" alt="socialMed" width="40">
+                    <img src="images/Logo/instagram.svg" class="socLogo" alt="socialMed" width="40">
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <hr>
+        <br>
+        <div class="copyright">
+            <p>© Copyright 2023. Made by SAMPSON MENSAH</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="index.js"></script>
+  </body>
+</html>

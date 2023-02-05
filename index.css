@@ -1,0 +1,629 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;  
+    box-sizing: border-box;
+  }
+/*================================================================= 
+============================DESKTOP STYLES==========================
+=================================================================*/
+body {
+  background-color: #f0eded;
+  color: rgb(4, 4, 4);
+  font-family: "Poppins", sans-serif;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 40px;
+  background-color: #1d1f1d;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #09c372;
+  margin-left: 50px;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 50px;
+}
+
+ul li:hover {
+  transform: scale(2.2);
+  transition: 0.3s;
+}
+.active {
+    background-color: #09C372;
+    padding: 10px;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+/* BODY */
+.container {
+    display: flex;
+}
+.col-sm-8 {
+    width: 100%;
+    margin-right: 100px;
+    margin-left: 100px;
+    height: 5700px;
+    /* border: 2px solid; */
+}
+.row h4 {
+    margin-top: 80px;
+    font-weight: lighter;
+    font-size: 30px;
+}
+.row p {
+    margin-bottom: 30px;
+}
+.row h3 {
+     font-size: 3.5rem;
+     font-weight: lighter;
+     margin-bottom: 80px;
+}
+.projects img {
+    width: 100%;
+    height: 12%;
+    border-radius: 30px;
+    padding: 0px 30px 0px 0px;
+}
+.projects p {
+    font-size: 30px;
+    padding: 20px 0px 10px;
+}
+.projects h5 {
+    font-size: 18px;
+    padding: 0px 0px 20px;
+    font-weight: lighter;
+    margin-bottom: 60px;    
+}
+.experience h2 {
+    font-size: 40px;
+    font-weight: lighter;
+}
+.experience p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.container100 {
+    display: flex;
+} 
+
+.container100 .row {
+    padding: 10px;  
+    margin: 20px;
+    border: 2px solid;
+    border-radius: 30px;
+}
+.container100 h5 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.container100 p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.col-sm-4 {
+    margin-bottom: 150px;
+}
+.container100 li {
+    margin-bottom: 30px;
+}
+#smallText {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+/* CONTACT BANNER */
+.banner-card {
+    position: relative;
+}
+.banner-card img {
+    /* border-top: 5px solid; */
+    height: 16%;
+    border-radius: 5px;
+    box-shadow: inset 0 -3rem 3em rgba(0, 0, 0, 0.1), 0 0 0 1.5px rgb(255, 255, 255),
+    0.3em 0.3em 3em rgba(0, 0, 0, 0.5);
+}
+.banner-text {
+    position: absolute;
+    padding: 90px;
+    top: 0;
+}
+.banner-text p {
+    font-size: 40px;
+}
+.row label {
+    margin: 20px 20px 20px 0;
+    font-size: 20px;
+}
+.form-control {
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+.btn {
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: #09C372;
+    border-radius: 5px;    
+    float: right;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+footer.container {
+    display: flex;
+}
+.wrapper {
+    margin-left: auto;
+    margin-right: 80px;
+}
+footer h5 {
+    color: #09C372;
+    font-size: 20px;
+}
+footer .text p {
+    font-size: 20px;
+}
+.ftLogo {
+    background-color: #09C372;
+    padding: 10px;
+}
+footer img {
+    /* border: 2px solid rgb(255, 255, 255); */
+    background-color: #09C372;
+}
+.copyright {
+    text-align: center;
+}
+
+
+/*================================================================= 
+================TABLET STYLES (VP=W-850 H-1180)====================
+=================================================================*/
+
+@media only screen and (max-width: 850px) {
+  header nav {
+    display: block;
+  }
+
+  #hamburger-icon {
+    display: none;
+  }
+
+  body {
+    background-color: #f0eded;
+    color: rgb(4, 4, 4);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  header a {
+    text-decoration: none;
+  }
+  
+  header {
+    padding: 0 20px;
+    background-color: #1d1f1d;
+    height: 80px;
+    display: flex;
+    justify-content: left;
+  }
+  
+  #brand {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 240px;
+  }
+  
+  #brand a {
+    color: #09c372;
+    margin-left: 30px;
+  }
+  
+  ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  ul li {
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  ul li:hover {
+    transform: scale(2.2);
+    transition: 0.3s;
+  }
+  .active {
+      background-color: #09C372;
+      padding: 10px;
+  }
+  
+  #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .col-sm-8 {
+    width: 100%;
+    margin-right: 50px;
+    margin-left: 50px;
+    height: 3990px;
+    /* border: 2px solid; */
+}
+.row h3 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin-bottom: 80px;
+}
+.projects img {
+   width: 100%;
+   height: 12%;
+   border-radius: 30px;
+   padding: 0px 30px 0px 0px;
+}
+.projects p {
+   font-size: 30px;
+   padding: 20px 0px 10px;
+}
+.projects h5 {
+   font-size: 18px;
+   padding: 0px 0px 20px;
+   font-weight: lighter;
+   margin-bottom: 20px;    
+}
+.experience p {
+    font-size: 150px;
+    margin-bottom: 20px;
+}
+.col-sm-8 .container {
+    display: grid;
+}
+.container .text {
+    margin: 10px 0px 20px 0px;
+    margin-bottom: 5px;
+}
+.container h4 {
+    font-size: 35px;
+    font-weight: lighter;
+}
+.container p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+#smallText {
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+/* BANNER CARD */
+.banner-card img {
+    /* border-top: 5px solid; */
+    height: 20%;
+    border-radius: 5px;
+    box-shadow: inset 0 -3rem 3em rgba(0, 0, 0, 0.1), 0 0 0 1.5px rgb(255, 255, 255),
+    0.3em 0.3em 3em rgba(0, 0, 0, 0.5);
+}
+.wrapper {
+    margin-left: auto;
+    margin-right: 10px;
+}
+.ftLogo {
+    background-color: #09C372;
+    padding: 10px;
+}
+
+}
+
+/*================================================================= 
+================MOBILE STYLES (VP=W-450 H-850)====================
+=================================================================*/
+
+@media only screen and (max-width: 450px) {
+    header nav {
+        display: none;
+    }
+    
+    #hamburger-icon {
+        display: block;
+    }
+
+    body {
+        background-color: #f0eded;
+        color: rgb(4, 4, 4);
+        font-family: "Poppins", sans-serif;
+    }
+      
+    header a {
+        text-decoration: none;
+    }
+      
+    header {
+        /* padding: 20 0px; */
+        background-color: #1d1f1d;
+        height: 150px;
+        display: flex;
+        justify-content: left;
+        padding-bottom: 200px;
+        padding-top: 40px;
+    }
+    /* MOBILE MENU STYLES */
+    .mobile-menu a {
+        text-align: right;
+        /* background-color: black; */
+        padding: 2px;
+        margin-left: 1px;
+    }
+      
+    #brand {
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        margin-right: 200px;
+    }
+      
+    #brand a {
+        color: #09c372;
+        margin-left: 30px;
+    }
+      
+    ul {
+        list-style: none;
+        height: 100%;
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+    }
+      
+    ul li {
+        padding: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+      
+    ul li:hover {
+        transform: scale(2.2);
+        transition: 0.3s;
+    }
+    .active {
+        background-color: #09C372;
+        padding: 10px;
+    }
+      
+    #hamburger-icon {
+        /* margin: auto 0; */
+        margin: 0;
+        display: block;
+        cursor: pointer;
+    }
+      
+    #hamburger-icon div {
+        width: 35px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .col-sm-8 {
+        width: 100%;
+        margin-right: 50px;
+        margin-left: 50px;
+        height: 3500px;
+        /* border: 2px solid; */
+    }
+    .row h4 {
+        font-size: 10px;
+        font-weight: lighter;
+    }
+    .row p {
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+    .row h3 {
+        font-size: 2rem;
+        font-weight: lighter;
+        margin-bottom: 50px;
+    }
+    .projects img {
+       width: 100%;
+       height: 7%;
+       border-radius: 30px;
+       padding: 0px 1px 0px 0px;
+    }
+    .projects p {
+       font-size: 30px;
+       padding: 20px 0px 10px;
+    }
+    .projects h5 {
+       font-size: 16px;
+       padding: 0px 0px 20px;
+       font-weight: lighter;
+       margin-bottom: 40px;    
+    }
+    .experience p {
+        font-size: 150px;
+        margin-bottom: 40px;
+    }
+    .col-sm-8 .container {
+        display: grid;
+        margin-bottom: 70px;
+    }
+    .container .text {
+        margin: 10px 0px 20px 0px;
+        margin-bottom: 5px;
+    }
+    .container h4 {
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    .container p {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    #smallText {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+    /* BANNER CARD */
+    .banner-card img {
+        /* border-top: 5px solid; */
+        height: 22%;
+        border-radius: 5px;
+        box-shadow: inset 0 -3rem 3em rgba(0, 0, 0, 0.1), 0 0 0 1.5px rgb(255, 255, 255),
+        0.3em 0.3em 3em rgba(0, 0, 0, 0.5);
+    }
+    .banner-text {
+        position: absolute;
+        padding: 40px;
+        top: 0;
+    }
+    .banner-text p {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+    .btn {
+        padding: 10px;
+        font-size: 20px;
+        color: white;
+        background-color: #09C372;
+        border-radius: 5px;    
+        float: right;
+    }
+
+    /* footer */
+    footer .text p {
+        font-size: 18px;
+    }
+    footer p {
+        font-size: 18px;
+    }
+    .wrapper {
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .ftLogo {
+        background-color: #09C372;
+        padding: 10px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .ftLogo img {
+        margin: 3px;
+    }
+    
+}
+
+/*================================================================= 
+===================MOBILE LANDSCAPE STYLES=========================
+=================================================================*/
+
+/* @media only screen and (max-width: 0px) {
+    header nav {
+      display: none;
+    }
+  
+    #hamburger-icon {
+      display: block;
+    }
+
+} */
