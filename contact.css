@@ -236,6 +236,7 @@ footer img {
     height: 80px;
     display: flex;
     justify-content: left;
+    width: 100%;
   }
   
   #brand {
@@ -243,7 +244,7 @@ footer img {
     font-size: 20px;
     display: flex;
     align-items: center;
-    margin-right: 240px;
+    margin-right: auto;
   }
   
   #brand a {
@@ -287,73 +288,77 @@ footer img {
     margin: 6px 0;
     transition: 0.4s;
   }
+
+  /* BODY */
+  .container {
+    display: flex;
+  }
   .col-sm-8 {
-    width: 100%;
-    margin-right: 50px;
-    margin-left: 50px;
-    height: 3990px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 1290px;
     /* border: 2px solid; */
-}
-.row h3 {
-    font-size: 2.5rem;
-    font-weight: lighter;
-    margin-bottom: 80px;
-}
-.projects img {
-   width: 100%;
-   height: 12%;
-   border-radius: 30px;
-   padding: 0px 30px 0px 0px;
-}
-.projects p {
-   font-size: 30px;
-   padding: 20px 0px 10px;
-}
-.projects h5 {
-   font-size: 18px;
-   padding: 0px 0px 20px;
-   font-weight: lighter;
-   margin-bottom: 20px;    
-}
-.experience p {
-    font-size: 150px;
-    margin-bottom: 20px;
-}
-.col-sm-8 .container {
-    display: grid;
-}
-.container .text {
-    margin: 10px 0px 20px 0px;
-    margin-bottom: 5px;
-}
-.container h4 {
-    font-size: 35px;
-    font-weight: lighter;
-}
-.container p {
-    font-size: 20px;
-    font-weight: lighter;
-}
-#smallText {
-    font-size: 17px;
-    margin-bottom: 40px;
-}
-/* BANNER CARD */
-.banner-card img {
+  }
+
+
+
+
+
+
+  /* BANNER CARD */
+  .banner-card img {
     /* border-top: 5px solid; */
-    height: 20%;
+    height: 65%;
+    /* width: 60%; */
     border-radius: 5px;
     box-shadow: inset 0 -3rem 3em rgba(0, 0, 0, 0.1), 0 0 0 1.5px rgb(255, 255, 255),
     0.3em 0.3em 3em rgba(0, 0, 0, 0.5);
-}
-.wrapper {
+  }
+  .wrapper {
     margin-left: auto;
     margin-right: 10px;
-}
-.ftLogo {
+  }
+  .ftLogo {
     background-color: #09C372;
     padding: 10px;
-}
+  }
+
+
+
+  /* FOOTER */
+
+  footer {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    width: 100%;
+  }
+  footer.container {
+      display: flex;
+  }
+  .wrapper {
+      margin-left: auto;
+      margin-right: 80px;
+  }
+  footer h5 {
+      color: #09C372;
+      font-size: 20px;
+  }
+  footer .text p {
+      font-size: 20px;
+  }
+  .ftLogo {
+      background-color: #09C372;
+      padding: 10px;
+  }
+  footer img {
+      /* border: 2px solid rgb(255, 255, 255); */
+      background-color: #09C372;
+  }
+  .copyright {
+      text-align: center;
+  }
 
 }
 
@@ -362,6 +367,9 @@ footer img {
 =================================================================*/
 
 @media only screen and (max-width: 450px) {
+  /* * {
+    outline: 1px solid red;
+  } */
     header nav {
         display: none;
     }
@@ -383,26 +391,27 @@ footer img {
     header {
         /* padding: 20 0px; */
         background-color: #1d1f1d;
-        height: 150px;
+        height: 120px;
         display: flex;
         justify-content: left;
         padding-bottom: 200px;
         padding-top: 40px;
+        width: 100%;
     }
     /* MOBILE MENU STYLES */
     .mobile-menu a {
         text-align: right;
         /* background-color: black; */
         padding: 2px;
-        margin-left: 1px;
+        margin-left: 0px;
     }
       
     #brand {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 15px;
         display: flex;
         align-items: center;
-        margin-right: 200px;
+        margin-right: auto;
     }
       
     #brand a {
@@ -420,7 +429,7 @@ footer img {
       
     ul li {
         padding: 5px;
-        margin-left: 5px;
+        margin-left: 30px;
         margin-right: 5px;
     }
       
@@ -435,9 +444,10 @@ footer img {
       
     #hamburger-icon {
         /* margin: auto 0; */
-        margin: 0;
+        /* margin: 0; */
         display: block;
         cursor: pointer;
+        width: 80px;
     }
       
     #hamburger-icon div {
@@ -449,69 +459,24 @@ footer img {
     }
 
     .col-sm-8 {
-        width: 100%;
+        width: 95%;
         margin-right: 50px;
         margin-left: 50px;
-        height: 3500px;
+        height: 1200px;
         /* border: 2px solid; */
     }
-    .row h4 {
-        font-size: 10px;
-        font-weight: lighter;
-    }
-    .row p {
-        font-size: 2rem;
-        font-weight: lighter;
-    }
-    .row h3 {
-        font-size: 2rem;
-        font-weight: lighter;
-        margin-bottom: 50px;
-    }
-    .projects img {
-       width: 100%;
-       height: 7%;
-       border-radius: 30px;
-       padding: 0px 1px 0px 0px;
-    }
-    .projects p {
-       font-size: 30px;
-       padding: 20px 0px 10px;
-    }
-    .projects h5 {
-       font-size: 16px;
-       padding: 0px 0px 20px;
-       font-weight: lighter;
-       margin-bottom: 40px;    
-    }
-    .experience p {
-        font-size: 150px;
-        margin-bottom: 40px;
-    }
-    .col-sm-8 .container {
-        display: grid;
-        margin-bottom: 70px;
-    }
-    .container .text {
-        margin: 10px 0px 20px 0px;
-        margin-bottom: 5px;
-    }
-    .container h4 {
-        font-size: 30px;
-        font-weight: lighter;
-    }
-    .container p {
-        font-size: 20px;
-        font-weight: lighter;
-    }
-    #smallText {
-        font-size: 17px;
-        margin-bottom: 30px;
+
+    .text10 p {
+      font-size: 20px;
+      text-align: center;
+      padding: 40px;
+      margin: 40px;
+      /* font-weight: bolder; */
     }
     /* BANNER CARD */
     .banner-card img {
         /* border-top: 5px solid; */
-        height: 22%;
+        height: 63%;
         border-radius: 5px;
         box-shadow: inset 0 -3rem 3em rgba(0, 0, 0, 0.1), 0 0 0 1.5px rgb(255, 255, 255),
         0.3em 0.3em 3em rgba(0, 0, 0, 0.5);
@@ -525,6 +490,9 @@ footer img {
         font-size: 25px;
         margin-bottom: 40px;
     }
+    #emailHelp {
+      line-height: 18px;
+    }
     .btn {
         padding: 10px;
         font-size: 20px;
@@ -535,6 +503,10 @@ footer img {
     }
 
     /* footer */
+    footer {
+      padding: 20px;
+      width: 100%;
+    }
     footer .text p {
         font-size: 18px;
     }
@@ -542,17 +514,20 @@ footer img {
         font-size: 18px;
     }
     .wrapper {
-        margin-left: 30px;
+      margin-right: auto;
         margin-top: 10px;
     }
     .ftLogo {
         background-color: #09C372;
         padding: 10px;
         text-align: center;
-        margin-top: 30px;
+        margin-top: 15px;
     }
     .ftLogo img {
         margin: 3px;
+    }
+    .copyright p {
+      font-size: 15px;
     }
     
 }

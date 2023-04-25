@@ -203,6 +203,7 @@ ul li:hover {
     border-radius: 5px;
     box-shadow: inset 0 -3rem 3em rgba(0, 0, 0, 0.1), 0 0 0 1.5px rgb(255, 255, 255),
     0.3em 0.3em 3em rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 .banner-text {
     position: absolute;
@@ -220,6 +221,7 @@ ul li:hover {
     padding: 20px;
     width: 100%;
     border-radius: 5px;
+    width: 100%;
 }
 .btn {
     padding: 20px;
@@ -235,6 +237,7 @@ footer {
     background-color: black;
     color: white;
     padding: 50px;
+    width: 100%;
 }
 footer.container {
     display: flex;
@@ -280,6 +283,7 @@ footer img {
     background-color: #f0eded;
     color: rgb(4, 4, 4);
     font-family: "Poppins", sans-serif;
+    width: 100%;
   }
   
   header a {
@@ -292,6 +296,7 @@ footer img {
     height: 80px;
     display: flex;
     justify-content: left;
+    width: 100%;
   }
   
   #brand {
@@ -299,7 +304,7 @@ footer img {
     font-size: 20px;
     display: flex;
     align-items: center;
-    margin-right: 240px;
+    margin-right: auto;    
   }
   
   #brand a {
@@ -345,19 +350,21 @@ footer img {
   }
   .col-sm-8 {
     width: 100%;
-    margin-right: 50px;
-    margin-left: 50px;
-    height: 3990px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 5750px;
+    padding: 20px;
     /* border: 2px solid; */
 }
 .row h3 {
-    font-size: 2.5rem;
+    width: 100%;
+    font-size: 2.5em;
     font-weight: lighter;
     margin-bottom: 80px;
 }
 .projects img {
    width: 100%;
-   height: 12%;
+   height: 450px;
    border-radius: 30px;
    padding: 0px 30px 0px 0px;
 }
@@ -369,47 +376,124 @@ footer img {
    font-size: 18px;
    padding: 0px 0px 20px;
    font-weight: lighter;
-   margin-bottom: 20px;    
+   margin-bottom: 70px;    
+   width: 100%;
 }
 .experience p {
-    font-size: 150px;
+    font-size: 20px;
     margin-bottom: 20px;
+    width: 100%;
+    text-align: justify;
 }
-.col-sm-8 .container {
-    display: grid;
+
+.container100 {
+    display: block;
+} 
+
+.container100 .row {
+    /* margin: 20px; */
+    border: 2px solid;
+    border-radius: 30px;
+    width: 90%;
 }
-.container .text {
-    margin: 10px 0px 20px 0px;
-    margin-bottom: 5px;
+.container100 h5 {
+    font-size: 25px;
+    font-weight: bold;
 }
-.container h4 {
-    font-size: 35px;
-    font-weight: lighter;
-}
-.container p {
+.container100 p {
     font-size: 20px;
     font-weight: lighter;
 }
-#smallText {
-    font-size: 17px;
-    margin-bottom: 40px;
+
+.col-sm-4 {
+    margin-bottom: 100px;
 }
+.container100 li {
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+#smallText {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+
 /* BANNER CARD */
+.banner-card {
+    position: relative;
+}
 .banner-card img {
     /* border-top: 5px solid; */
-    height: 20%;
+    height: 15%;
     border-radius: 5px;
     box-shadow: inset 0 -3rem 3em rgba(0, 0, 0, 0.1), 0 0 0 1.5px rgb(255, 255, 255),
     0.3em 0.3em 3em rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+.banner-text {
+    position: absolute;
+    padding: 90px;
+    top: 0;
+}
+.banner-text p {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.row label {
+    margin: 20px 20px 20px 0;
+    font-size: 20px;
+}
+.form-control {
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+    width: 100%;
+}
+.btn {
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: #09C372;
+    border-radius: 5px;    
+    float: right;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    width: 100%;
+}
+footer.container {
+    display: flex;
 }
 .wrapper {
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 80px;
+}
+footer h5 {
+    color: #09C372;
+    font-size: 20px;
+}
+footer .text p {
+    font-size: 20px;
 }
 .ftLogo {
     background-color: #09C372;
     padding: 10px;
 }
+footer img {
+    /* border: 2px solid rgb(255, 255, 255); */
+    background-color: #09C372;
+}
+.copyright {
+    text-align: center;
+}
+
 
 }
 
@@ -444,6 +528,7 @@ footer img {
         justify-content: left;
         padding-bottom: 200px;
         padding-top: 40px;
+        width: 100%;
     }
     /* MOBILE MENU STYLES */
     .mobile-menu a {
@@ -458,12 +543,12 @@ footer img {
         font-size: 20px;
         display: flex;
         align-items: center;
-        margin-right: 200px;
+        /* margin-right: 200px; */
     }
       
     #brand a {
         color: #09c372;
-        margin-left: 30px;
+        margin-left: 20px;
     }
       
     ul {
@@ -484,11 +569,6 @@ footer img {
         transform: scale(2.2);
         transition: 0.3s;
     }
-    .active {
-        background-color: #09C372;
-        padding: 10px;
-    }
-      
     #hamburger-icon {
         /* margin: auto 0; */
         margin: 0;
@@ -506,9 +586,9 @@ footer img {
 
     .col-sm-8 {
         width: 100%;
-        margin-right: 50px;
-        margin-left: 50px;
-        height: 3500px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 6200px;
         /* border: 2px solid; */
     }
     .row h4 {
@@ -516,7 +596,7 @@ footer img {
         font-weight: lighter;
     }
     .row p {
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: lighter;
     }
     .row h3 {
@@ -526,9 +606,9 @@ footer img {
     }
     .projects img {
        width: 100%;
-       height: 7%;
+       height: 270px;
        border-radius: 30px;
-       padding: 0px 1px 0px 0px;
+       padding: 0px 0px 0px 0px;
     }
     .projects p {
        font-size: 30px;
@@ -541,11 +621,11 @@ footer img {
        margin-bottom: 40px;    
     }
     .experience p {
-        font-size: 150px;
-        margin-bottom: 40px;
+        font-size: 15px;
+        margin-bottom: 80px;
     }
     .col-sm-8 .container {
-        display: grid;
+        display: block;
         margin-bottom: 70px;
     }
     .container .text {
@@ -556,7 +636,7 @@ footer img {
         font-size: 30px;
         font-weight: lighter;
     }
-    .container p {
+    .container100 p {
         font-size: 20px;
         font-weight: lighter;
     }
@@ -567,7 +647,7 @@ footer img {
     /* BANNER CARD */
     .banner-card img {
         /* border-top: 5px solid; */
-        height: 22%;
+        height: 12.5%;
         border-radius: 5px;
         box-shadow: inset 0 -3rem 3em rgba(0, 0, 0, 0.1), 0 0 0 1.5px rgb(255, 255, 255),
         0.3em 0.3em 3em rgba(0, 0, 0, 0.5);
@@ -591,20 +671,25 @@ footer img {
     }
 
     /* footer */
+    footer .container {
+        display: grid;
+    }
     footer .text p {
         font-size: 18px;
+        width: 100%;
     }
     footer p {
         font-size: 18px;
     }
     .wrapper {
-        margin-left: 30px;
-        margin-top: 10px;
+        margin-top: 70px;
+        text-align: left;
     }
     .ftLogo {
+        display: flex;
         background-color: #09C372;
         padding: 10px;
-        text-align: center;
+        text-align: left;
         margin-top: 30px;
     }
     .ftLogo img {
